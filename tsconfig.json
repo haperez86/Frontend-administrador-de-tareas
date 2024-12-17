@@ -2,11 +2,13 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "target": "ES6",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "Node16", // Cambiado a Node16
+    "moduleResolution": "node16", // Sigue siendo Node16 para resolver módulos modernos
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true, // Opcional, para ignorar verificaciones en node_modules
+    "forceConsistentCasingInFileNames": true
   },
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-	"exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
